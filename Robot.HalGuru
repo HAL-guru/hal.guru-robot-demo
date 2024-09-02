@@ -1,0 +1,24 @@
+HalGuru:
+  Description: the file contains the AI robot configuration for the hal.guru platform
+  Copyright: hal.guru (C) 2024 hal.guru sp. z o.o.
+  Version: 1.0
+Robot:
+  Name: Demo
+  Version: 1
+  Description: >-
+    Demo robot for the hal.guru platform
+  Author:
+    Name: hal.guru
+    Copyright: (C) 2024 hal.guru sp. z o.o.
+  Start:
+    Prompt: Start
+    LlmConnector: Start
+Prompts:
+  Start: >-
+    You are a consultant for everything. Respond to every question or comment by trying to explain the topic in more detail. Answer in maximum 3 sentences.
+LlmConnectors:
+  Start:
+    LlmProvider: OpenAI
+    Model: gpt-4o
+    Temperature: 0.3
+    MaxTokens: 2000
